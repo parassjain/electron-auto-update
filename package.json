@@ -1,6 +1,6 @@
 {
   "name": "electron-auto-update",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "",
   "main": "main.js",
   "repository": {
@@ -13,6 +13,14 @@
     "build": "electron-builder build --win --publish never",
     "deploy": "electron-builder build --win --publish always"
   },
+  "build": {
+    "appId": "com.github.prsjn.electronupdaterexample",
+    "publish": [{
+      "provider": "github",
+      "owner": "prsjn",
+      "repo": "electron-auto-update"
+  }]
+},
   "author": "",
   "license": "ISC",
   "devDependencies": {
